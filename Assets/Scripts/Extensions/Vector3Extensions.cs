@@ -32,4 +32,10 @@ public static class Vector3Extensions
         } 
         return closest.transform.position;
     }
+    public static float GetLenght(this Vector3 a)
+    {
+        if (a == null) throw new ArgumentException();
+        float sumOfSquares = a.x * a.x + a.z * a.z;
+        return MathF.Sqrt(sumOfSquares);
+    }
 }

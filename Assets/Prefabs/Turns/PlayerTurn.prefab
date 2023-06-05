@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4097908513453593020}
   - component: {fileID: 718750944697322593}
   - component: {fileID: -2949280254922313176}
+  - component: {fileID: 4066028922966042271}
   m_Layer: 0
   m_Name: PlayerTurn
   m_TagString: Untagged
@@ -62,3 +63,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: Your turn
+--- !u!114 &4066028922966042271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162718754813275175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfdf7b4c4b7b01488c2c18422fd3bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _linePrefab: {fileID: 7326184031168399514, guid: 129b4164ad4b71f4abd1e72fcfafafe3, type: 3}
+  _floorMargin: 0.4

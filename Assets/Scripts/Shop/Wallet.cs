@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class Wallet : MonoBehaviour
 {
-    [SerializeField] private float _addedMoney;
+    [SerializeField] private uint _addedMoney;
     private float _money;
 
     public UnityEvent<float> OnChangeMoney;

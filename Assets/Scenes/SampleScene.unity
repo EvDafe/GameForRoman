@@ -884,7 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a53176670647d4ca5d015fa240ee73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _addedMoney: 10
+  _addedMoney: 5
   OnChangeMoney:
     m_PersistentCalls:
       m_Calls: []

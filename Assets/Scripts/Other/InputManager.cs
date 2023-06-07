@@ -27,6 +27,5 @@ public class InputManager : MonoBehaviour
     {
         Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, Mathf.Infinity, _inputLayer);
         position = hit.point;
-        Debug.Log(position);
     }
 }

@@ -8,6 +8,8 @@ public class ChessmanThrower : MonoBehaviour
     [SerializeField] protected float _throwPower;
     [SerializeField] protected float _maxThrowDistance;
 
+    public float MaxThrowDistance => _maxThrowDistance;
+
     protected Rigidbody _rigidbody;
     private void Start()
     {

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4097908513453593020}
   - component: {fileID: 718750944697322593}
   - component: {fileID: -2949280254922313176}
+  - component: {fileID: 2437717248820075816}
   m_Layer: 0
   m_Name: PlayerTurn
   m_TagString: Untagged
@@ -46,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nextTurnPrefab: {fileID: 481912567898731631, guid: 993d265e6328e1643ac0fb226eb0674c, type: 3}
-  _endDuration: 4
   OnStart:
     m_PersistentCalls:
       m_Calls: []
@@ -66,3 +66,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: Your turn
+--- !u!114 &2437717248820075816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162718754813275175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e01cf3470ab31d8469c54dd9c8a59e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _linePrefab: {fileID: 8688462881445783703, guid: 851e7bd1d1dc3674a9ce613fb220a3ba, type: 3}
+  _floorMargin: 2

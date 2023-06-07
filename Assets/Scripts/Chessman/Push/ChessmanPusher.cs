@@ -29,7 +29,6 @@ public class ChessmanPusher : MonoBehaviour
         var pusherPosition = pusher.transform.position;
         var direction = pusherPosition.FindReflectedVectorBetween(transform.position);
         direction = direction.normalized;
-        Debug.Log(pusher.Magnitude);
         Vector3 offset = direction * pusher.Magnitude * pusher.PushPower / _pushResistance;
         _rigidbody.AddForce(offset);
         OnPush?.Invoke();

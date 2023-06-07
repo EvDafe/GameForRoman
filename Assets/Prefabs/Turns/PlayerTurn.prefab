@@ -53,6 +53,9 @@ MonoBehaviour:
   onStart:
     m_PersistentCalls:
       m_Calls: []
+  _chessmansLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &-2949280254922313176
 MonoBehaviour:
   m_ObjectHideFlags: 0

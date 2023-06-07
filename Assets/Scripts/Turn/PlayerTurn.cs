@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerTurnCursorSpawner))]
 public class PlayerTurn : Turn
 {
+    [SerializeField] private LayerMask _chessmansLayer;
+
     private PlayerChessman _selectedChessman;
     private PlayerTurnCursorSpawner _cursorSpawner;
 
@@ -26,8 +28,9 @@ public class PlayerTurn : Turn
     }
     private void TrySelectChessman()
     {
-        InputManager.Instance.TryGetComponentAtMousePosition(out PlayerChessman playerchess);
-        _selectedChessman = playerchess;
+        PlayerChessman playerchess = InputManager.Instance.TryGetComponentAtMousePosition<PlayerChessman>(_chessmansLayer);
+        if(playerchess != null)
+            _selectedChessman = playerchess;
     }
     private void TryThrowChessman()
     {

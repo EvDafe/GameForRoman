@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5773835211308897535}
   - component: {fileID: -5654064662156217297}
   - component: {fileID: -1772524071256359715}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Black King
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 707425046654774771, guid: 493587cb6138bf44c8ae53e69396a71f, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3330041977399788903, guid: 493587cb6138bf44c8ae53e69396a71f, type: 3}
       propertyPath: m_RootOrder

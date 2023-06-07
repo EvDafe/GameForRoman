@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4408339809843252816}
   - component: {fileID: 2582488047433706194}
   - component: {fileID: 2268440090857234260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: White Rook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 707425046654774771, guid: 4ca3c3d821c1cc842aa9e93652d6296e, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3330041977399788903, guid: 4ca3c3d821c1cc842aa9e93652d6296e, type: 3}
       propertyPath: m_RootOrder

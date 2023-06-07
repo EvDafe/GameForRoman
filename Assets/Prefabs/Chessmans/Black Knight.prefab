@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 6128806154528750786}
   - component: {fileID: 4638842028813895216}
   - component: {fileID: 6178900677901796441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Black Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 707425046654774771, guid: 493587cb6138bf44c8ae53e69396a71f, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3330041977399788903, guid: 493587cb6138bf44c8ae53e69396a71f, type: 3}
       propertyPath: m_RootOrder

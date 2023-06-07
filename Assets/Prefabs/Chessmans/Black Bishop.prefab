@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: -7875240227285485179}
   - component: {fileID: 5810861577605935390}
   - component: {fileID: -6540784438602801096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Black Bishop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 707425046654774771, guid: 493587cb6138bf44c8ae53e69396a71f, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3330041977399788903, guid: 493587cb6138bf44c8ae53e69396a71f, type: 3}
       propertyPath: m_RootOrder

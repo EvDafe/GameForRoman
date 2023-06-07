@@ -15,13 +15,15 @@ public class InputManager : MonoBehaviour
             throw new InvalidOperationException();
     }
 
-    public void TryGetComponentAtMousePosition<T>(out T component) where T : Component
+    public T TryGetComponentAtMousePosition<T>(LayerMask layer) where T : Component
     {
-        Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit);
-        if(hit.collider.TryGetComponent<T>(out T findComponent))
-            component = findComponent;
-        else
-            component = null;
+        if(Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), Mathf.Infinity, layer))
+        {
+            Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, Mathf.Infinity, layer);
+            if (hit.collider.TryGetComponent(out T findComponent))
+                return findComponent;
+        }
+        return null;
     }
     public void GetMousePosition(out Vector3 position)
     {

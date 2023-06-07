@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 3919781032749794986}
   - component: {fileID: 8478008562430813719}
   - component: {fileID: 4577013041680592931}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: White Bishop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 707425046654774771, guid: 4ca3c3d821c1cc842aa9e93652d6296e, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3330041977399788903, guid: 4ca3c3d821c1cc842aa9e93652d6296e, type: 3}
       propertyPath: m_RootOrder

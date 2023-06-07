@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2509168089028493118}
   - component: {fileID: -2977640122112746448}
   - component: {fileID: 6862273552812332478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: White King
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 707425046654774771, guid: 4ca3c3d821c1cc842aa9e93652d6296e, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3330041977399788903, guid: 4ca3c3d821c1cc842aa9e93652d6296e, type: 3}
       propertyPath: m_RootOrder

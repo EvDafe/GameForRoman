@@ -220,6 +220,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueTrail
       objectReference: {fileID: 0}
+    - target: {fileID: 707425046654774771, guid: 4ca3c3d821c1cc842aa9e93652d6296e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3330041977399788903, guid: 4ca3c3d821c1cc842aa9e93652d6296e, type: 3}
       propertyPath: m_RootOrder
       value: 0

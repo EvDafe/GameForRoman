@@ -3,13 +3,11 @@ using UnityEngine;
 
 public class PlayerTurn : Turn
 {
-    private Camera _camera;
-
     private PlayerChessman _selectedChessman;
 
     private void Start()
     {
-        _camera = Camera.main;
+        
     }
     private void Update()
     {
@@ -24,17 +22,16 @@ public class PlayerTurn : Turn
     }
     private void TrySelectChessman()
     {
-        Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit);
-        if (hit.collider.TryGetComponent(out PlayerChessman playerchess))
-            _selectedChessman = playerchess;
+        InputManager.Instance.TryGetComponentAtMousePosition(out PlayerChessman playerchess);
+        _selectedChessman = playerchess;
     }
     private void TryThrowChessman()
     {
         if(_selectedChessman != null)
         {
-            Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit);
+            InputManager.Instance.GetMousePosition(out Vector3 mousePosition);
             ChessmanThrower thrower = _selectedChessman.GetComponent<ChessmanThrower>();
-            thrower.Throw(hit.point);
+            thrower.Throw(mousePosition);
             _selectedChessman = null;
             EndTurn();
         }

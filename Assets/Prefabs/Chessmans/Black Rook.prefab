@@ -251,6 +251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedTrail
       objectReference: {fileID: 0}
+    - target: {fileID: 707425046654774771, guid: 493587cb6138bf44c8ae53e69396a71f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3330041977399788903, guid: 493587cb6138bf44c8ae53e69396a71f, type: 3}
       propertyPath: m_RootOrder
       value: 0

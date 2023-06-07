@@ -1947,25 +1947,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackGround
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 977190805166811773, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190804915105340, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190804972521997, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190805438222051, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190806390856453, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190804609018753, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190805702582017, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190804995249669, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190806123636399, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190805246284281, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190804843866368, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190805273496788, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190805815113750, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190805464834082, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190806030750811, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190805110022880, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190806585364553, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 1090184523020230795, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 2238847587004027112, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
-    - {fileID: 977190806002102482, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c4304be27a86349a4aefef763c15c1, type: 3}

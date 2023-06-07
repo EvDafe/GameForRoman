@@ -46,7 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nextTurnPrefab: {fileID: 718750944697322593, guid: 569f2445a14ac0d46b7510bf953e236b, type: 3}
+  _endDuration: 3
   OnStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onStart:
     m_PersistentCalls:
       m_Calls: []
   _turnDuration: 5

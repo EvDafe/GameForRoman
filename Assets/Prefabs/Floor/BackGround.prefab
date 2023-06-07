@@ -342,7 +342,6 @@ GameObject:
   - component: {fileID: 3397118430350506667}
   - component: {fileID: 6765089929455213899}
   - component: {fileID: 3316208333665768097}
-  - component: {fileID: 2238847587004027112}
   m_Layer: 0
   m_Name: w (1)
   m_TagString: Untagged
@@ -415,19 +414,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2238847587004027112
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4011540914304223927}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4275328894639495851
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +425,6 @@ GameObject:
   - component: {fileID: 5661724766644318023}
   - component: {fileID: 593377918954913724}
   - component: {fileID: 1293735541747312496}
-  - component: {fileID: 1090184523020230795}
   m_Layer: 0
   m_Name: w (2)
   m_TagString: Untagged
@@ -512,19 +497,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1090184523020230795
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4275328894639495851}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &977190804911912776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -812,6 +784,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8473527195315385925, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0028304
+      objectReference: {fileID: 0}
+    - target: {fileID: 8473527195315385925, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+      propertyPath: m_Center.y
+      value: 0.0014152051
+      objectReference: {fileID: 0}
     - target: {fileID: 8473527195323810547, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -832,7 +812,25 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8473527195258702444, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527194973441581, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527195184491036, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527195532488434, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527194303036180, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527194751110032, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527193649102608, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527195161736724, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527194041829054, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527195456025064, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527195053066513, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527195420454085, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527193813391367, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527195497480243, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527193857864778, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527195323810545, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527194653782104, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
+    - {fileID: 8473527193886478531, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a63f4f2c6dcb1af438b3f9d68f657db7, type: 3}
 --- !u!4 &977190806013745370 stripped
 Transform:

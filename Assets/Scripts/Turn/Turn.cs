@@ -9,15 +9,18 @@ public class Turn : MonoBehaviour
 
     private UnityEvent OnEnd;
     public UnityEvent<string> OnStart;
+    public UnityEvent onStart;
 
     private void Start()
     {
         List<ChessmanLevelUpper> levelUppers = FindObjectsByType<ChessmanLevelUpper>(0).ToList();
         SubscriptionLevelUppers(levelUppers);
+        onStart?.Invoke();
     }
     private void SubscriptionLevelUppers(List<ChessmanLevelUpper> levelUppers)
     {
         levelUppers.ForEach(x => OnEnd.AddListener(x.RemoveKiller));
+        levelUppers.ForEach(x => onStart.AddListener(x.RemoveKiller));
     }
     protected void EndTurn()
     {

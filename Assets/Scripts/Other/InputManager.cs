@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    [SerializeField] Camera _camera;
-    [SerializeField] LayerMask _inputLayer;
+    [SerializeField] private Camera _camera;
+    [SerializeField] private LayerMask _inputLayer;
     public static InputManager Instance { get; private set; }
 
     private void Awake()
@@ -25,13 +25,8 @@ public class InputManager : MonoBehaviour
     }
     public void GetMousePosition(out Vector3 position)
     {
-        if (Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), Mathf.Infinity, _inputLayer))
-        {
-            Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit);
-            position = hit.point;
-            Debug.Log(position);
-        }
-        else 
-            position = Vector3.zero;
+        Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, Mathf.Infinity, _inputLayer);
+        position = hit.point;
+        Debug.Log(position);
     }
 }

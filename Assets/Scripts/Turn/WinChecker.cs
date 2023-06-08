@@ -15,7 +15,6 @@ public class WinChecker : MonoBehaviour
     }
     private void Win()
     {
-        var currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        new SceneManager().TryLoadNextScene();
     }
 }

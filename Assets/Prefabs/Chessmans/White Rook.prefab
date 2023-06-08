@@ -139,9 +139,6 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  Died:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &-894120218662046605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _throwPower: 160
-  _maxThrowDistance: 4
+  _maxThrowDistance: 4.5
 --- !u!114 &2582488047433706194
 MonoBehaviour:
   m_ObjectHideFlags: 0

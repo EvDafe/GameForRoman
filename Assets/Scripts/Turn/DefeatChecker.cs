@@ -15,7 +15,6 @@ public class DefeatChecker : MonoBehaviour
     }
     private void Defeat()
     {
-        var currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        new SceneManager().ReloadScene();
     }
 }

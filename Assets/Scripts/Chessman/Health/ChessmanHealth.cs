@@ -1,17 +1,22 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Networking;
 
 [RequireComponent(typeof(Chessman))]
 public class ChessmanHealth : MonoBehaviour
 {
+    private Chessman _chessman;
+
     public UnityEvent OnDeath;
-    public UnityEvent<Chessman> Died;
+
+    private void Start()
+    {
+        _chessman = GetComponent<Chessman>();
+    }
     private void Death()
     {
-        Chessman chessman = GetComponent<Chessman>();
         OnDeath.AddListener(Wallet.Instance.TakeMoney);
         OnDeath?.Invoke();
-        Died?.Invoke(chessman);
         Destroy(gameObject);
     }
 

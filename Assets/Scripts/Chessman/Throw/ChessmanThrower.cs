@@ -22,7 +22,6 @@ public class ChessmanThrower : MonoBehaviour
         Vector3 direction = point.FindReflectedVectorBetween(transform.position);
         float distance = Vector3.Distance(point, transform.position);
         if (distance > _maxThrowDistance) distance = _maxThrowDistance;
-        Debug.Log(distance);
         _rigidbody.AddForce(_throwPower * distance * direction.normalized);
     }
 }

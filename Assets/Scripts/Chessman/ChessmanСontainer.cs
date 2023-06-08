@@ -9,9 +9,10 @@ public class Chessman—ontainer : MonoBehaviour
     [SerializeField] private List<EnemyChessman> _enemyChessmans;
     [SerializeField] private List<PlayerChessman> _playerChessmans;
 
-    public List<EnemyChessman> EnemyChessmans => _enemyChessmans = FindObjectsByType<EnemyChessman>(0).ToList();
-    public List<PlayerChessman> PlayerChessmans => _playerChessmans = FindObjectsByType<PlayerChessman>(0).ToList();
+    public List<EnemyChessman> EnemyChessmans => _enemyChessmans;
+    public List<PlayerChessman> PlayerChessmans => _playerChessmans;
     public static Chessman—ontainer Instance { get; private set; }
+    public UnityEvent OnRemoveChessman;
 
     private void Awake()
     {
@@ -20,24 +21,24 @@ public class Chessman—ontainer : MonoBehaviour
         else
             throw new InvalidOperationException();
 
-        _enemyChessmans = FindObjectsByType<EnemyChessman>(0).ToList();
-        _playerChessmans = FindObjectsByType<PlayerChessman>(0).ToList();
+        
     }
-    private void SubscriptionOnDeath(IEnumerable<Chessman> chessmans, UnityAction<Chessman> action)
+    public void RemovePlayer(PlayerChessman playerChessman)
     {
-        List<ChessmanHealth> chessmanHealths = new();
-        foreach(var chess in chessmans)
-        {
-            chessmanHealths.Add(chess.GetComponent<ChessmanHealth>());
-        }
-        chessmanHealths.ForEach( x => x.Died.AddListener(action));
+        _playerChessmans.Remove(playerChessman);
+        OnRemoveChessman?.Invoke();
     }
-    private void RemovePlayer(Chessman playerChessman)
+    public void AddPlayer(PlayerChessman playerChessman)
     {
-        _playerChessmans.Remove((PlayerChessman)playerChessman);
+        _playerChessmans.Add(playerChessman);
     }
-    private void RemoveEnemy(Chessman enemyChessman)
+    public void RemoveEnemy(EnemyChessman enemyChessman)
     {
-        _enemyChessmans.Remove((EnemyChessman)enemyChessman);
+        _enemyChessmans.Remove(enemyChessman);
+        OnRemoveChessman?.Invoke();
+    }
+    public void AddEnemy(EnemyChessman enemyChessman)
+    {
+        _enemyChessmans.Add(enemyChessman);
     }
 }

@@ -7,7 +7,7 @@ public class Turn : MonoBehaviour
 {
     [SerializeField] private Turn _nextTurnPrefab;
 
-    private UnityEvent OnEnd;
+    public UnityEvent OnEnd;
     public UnityEvent<string> OnStart;
     public UnityEvent onStart;
 

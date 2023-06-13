@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _throwPower: 120
-  _maxThrowDistance: 6
+  _maxThrowDistance: 5
 --- !u!114 &4336300551461825466
 MonoBehaviour:
   m_ObjectHideFlags: 0

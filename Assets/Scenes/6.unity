@@ -1229,12 +1229,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 384ac658170b6bc43bc9ac75f5cc730f, type: 3}
+  m_Script: {fileID: 11500000, guid: a57e0c755a4d5904a9945e23ff49e07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyChessmans: []
   _playerChessmans: []
-  OnRemoveChessman:
+  OnDeathChessman:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &963194232

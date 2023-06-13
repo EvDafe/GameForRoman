@@ -5,16 +5,17 @@ public class DefeatChecker : MonoBehaviour
 {
     private void Start()
     {
-        Chessman—ontainer.Instance.OnRemoveChessman.AddListener(CheckDefeat);
+        ChessmanContainer.Instance.OnDeathChessman.AddListener(CheckDefeat);
     }
 
     private void CheckDefeat()
     {
-        if (Chessman—ontainer.Instance.PlayerChessmans.Count == 0)
+        if (ChessmanContainer.Instance.PlayerChessmans.Count == 0)
             Defeat();
     }
     private void Defeat()
     {
+        Debug.Log("Defeat");
         new SceneManager().ReloadScene();
     }
 }

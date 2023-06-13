@@ -5,16 +5,17 @@ public class WinChecker : MonoBehaviour
 {
     private void Start()
     {
-        Chessman—ontainer.Instance.OnRemoveChessman.AddListener(CheckWin);
+        ChessmanContainer.Instance.OnDeathChessman.AddListener(CheckWin);
     }
     
     private void CheckWin()
     {
-        if (Chessman—ontainer.Instance.EnemyChessmans.Count == 0)
+        if (ChessmanContainer.Instance.EnemyChessmans.Count == 0)
             Win();
     }
     private void Win()
     {
+        Debug.Log("Win");
         new SceneManager().TryLoadNextScene();
     }
 }

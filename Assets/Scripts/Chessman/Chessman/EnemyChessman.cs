@@ -1,13 +1,20 @@
+using System.Linq;
 using UnityEngine;
 
 public class EnemyChessman : Chessman
 {
     private void Start()
     {
-        Chessman—ontainer.Instance.AddEnemy(this);
+        ChessmanContainer.Instance.AddEnemy(this);
     }
     private void OnDestroy()
     {
-        Chessman—ontainer.Instance.RemoveEnemy(this);
+        TryRemoveMe();
+    }
+
+    private void TryRemoveMe()
+    {
+        if (ChessmanContainer.Instance.EnemyChessmans.Contains(this))
+            ChessmanContainer.Instance.RemoveEnemy(this);
     }
 }

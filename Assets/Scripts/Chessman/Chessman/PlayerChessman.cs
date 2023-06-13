@@ -4,10 +4,16 @@ public class PlayerChessman : Chessman
 {
     private void Start()
     {
-        Chessman—ontainer.Instance.AddPlayer(this);
+        ChessmanContainer.Instance.AddPlayer(this);
     }
     private void OnDestroy()
     {
-        Chessman—ontainer.Instance.RemovePlayer(this);
+        TryRemoveMe();
+    }
+
+    private void TryRemoveMe()
+    {
+        if(ChessmanContainer.Instance.PlayerChessmans.Contains(this))
+            ChessmanContainer.Instance.RemovePlayer(this);
     }
 }

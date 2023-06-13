@@ -1,4 +1,5 @@
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public static class SceneManagerExtensions
 {
@@ -10,9 +11,11 @@ public static class SceneManagerExtensions
     public static void TryLoadNextScene(this SceneManager manager)
     {
         var currentScene = SceneManager.GetActiveScene();
-        if (currentScene.buildIndex != SceneManager.sceneCount)
-            SceneManager.LoadScene(currentScene.buildIndex + 1);
+        int nextSceneIndex = currentScene.buildIndex + 1;
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+            SceneManager.LoadScene(nextSceneIndex);
         else
-            SceneManager.LoadScene(currentScene.buildIndex);
+            SceneManager.LoadScene(currentScene.name);
+
     }
 }

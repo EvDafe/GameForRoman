@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: -7875240227285485179}
   - component: {fileID: 5810861577605935390}
   - component: {fileID: -6540784438602801096}
+  - component: {fileID: -6984742766983379447}
+  - component: {fileID: -6436104047147047855}
   m_Layer: 8
   m_Name: Black Bishop
   m_TagString: Untagged
@@ -139,9 +141,6 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  Died:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &-254928195445686232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +239,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _throwPower: 140
   _maxThrowDistance: 6
+--- !u!114 &-6984742766983379447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7b2df68c85c464d858e037ddfedea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGiveMoney:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6436104047147047855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86626835ab6242b46bf1b65f60be2cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectPrefab: {fileID: 3247734163555348347, guid: 8772b224ebc7f6f4cb281c3a8bfb0146, type: 3}
 --- !u!1001 &5288729166138540287
 PrefabInstance:
   m_ObjectHideFlags: 0

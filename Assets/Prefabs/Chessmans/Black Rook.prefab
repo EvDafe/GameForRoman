@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 370663723716819160}
   - component: {fileID: 2958939715280717782}
   - component: {fileID: -252735814206551453}
+  - component: {fileID: -9122079671656518018}
+  - component: {fileID: -2830431412128629649}
   m_Layer: 8
   m_Name: Black Rook
   m_TagString: Untagged
@@ -139,9 +141,6 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  Died:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &-2939992691592616014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +239,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _throwPower: 160
   _maxThrowDistance: 6
+--- !u!114 &-9122079671656518018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7b2df68c85c464d858e037ddfedea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGiveMoney:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-2830431412128629649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86626835ab6242b46bf1b65f60be2cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectPrefab: {fileID: 3247734163555348347, guid: 8772b224ebc7f6f4cb281c3a8bfb0146, type: 3}
 --- !u!1001 &5656421849960773588
 PrefabInstance:
   m_ObjectHideFlags: 0

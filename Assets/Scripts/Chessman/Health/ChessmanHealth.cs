@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Networking;
 
 [RequireComponent(typeof(Chessman))]
 public class ChessmanHealth : MonoBehaviour
@@ -15,8 +14,8 @@ public class ChessmanHealth : MonoBehaviour
     }
     private void Death()
     {
-        OnDeath.AddListener(Wallet.Instance.TakeMoney);
         OnDeath?.Invoke();
+        ChessmanContainer.Instance.DeathChessman(_chessman);
         Destroy(gameObject);
     }
 

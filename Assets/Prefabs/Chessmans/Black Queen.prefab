@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: -4565775402414216219}
   - component: {fileID: 4489949118421531844}
   - component: {fileID: 8795963023896307961}
+  - component: {fileID: -8578758785186680081}
+  - component: {fileID: 2193953115797227153}
   m_Layer: 8
   m_Name: Black Queen
   m_TagString: Untagged
@@ -139,9 +141,6 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  Died:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &-6656884209101155016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +239,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _throwPower: 180
   _maxThrowDistance: 6
+--- !u!114 &-8578758785186680081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7b2df68c85c464d858e037ddfedea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGiveMoney:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2193953115797227153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86626835ab6242b46bf1b65f60be2cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectPrefab: {fileID: 3247734163555348347, guid: 8772b224ebc7f6f4cb281c3a8bfb0146, type: 3}
 --- !u!1001 &1317687368282145652
 PrefabInstance:
   m_ObjectHideFlags: 0

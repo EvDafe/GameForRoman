@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 3005457980066675518}
   - component: {fileID: -6357526678010724066}
   - component: {fileID: -5824476335728250005}
+  - component: {fileID: -8926418096764388591}
+  - component: {fileID: -164042945166103236}
   m_Layer: 8
   m_Name: Black Pawn
   m_TagString: Untagged
@@ -139,9 +141,6 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  Died:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &5583545843375593373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +239,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _throwPower: 100
   _maxThrowDistance: 4
+--- !u!114 &-8926418096764388591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7b2df68c85c464d858e037ddfedea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGiveMoney:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-164042945166103236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86626835ab6242b46bf1b65f60be2cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectPrefab: {fileID: 3247734163555348347, guid: 8772b224ebc7f6f4cb281c3a8bfb0146, type: 3}
 --- !u!1001 &8745240788271718650
 PrefabInstance:
   m_ObjectHideFlags: 0

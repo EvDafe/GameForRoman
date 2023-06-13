@@ -14,14 +14,14 @@ public class EnemyTurn : Turn
     
     private void Select()
     {
-        int index = Random.Range(0, Chessman—ontainer.Instance.EnemyChessmans.Count);
-        _selectedChessman = Chessman—ontainer.Instance.EnemyChessmans[index];
+        int index = Random.Range(0, ChessmanContainer.Instance.EnemyChessmans.Count);
+        _selectedChessman = ChessmanContainer.Instance.EnemyChessmans[index];
     }
     
     private Vector3 FindClosestPlayerChessmanPosition()
     {
         Vector3 selectedChessmanPosition = _selectedChessman.transform.position;
-        return selectedChessmanPosition.FindClosest(Chessman—ontainer.Instance.PlayerChessmans);
+        return selectedChessmanPosition.FindClosest(ChessmanContainer.Instance.PlayerChessmans);
     }
 
     private void Turn()

@@ -19,6 +19,8 @@ GameObject:
   - component: {fileID: 5773835211308897535}
   - component: {fileID: -5654064662156217297}
   - component: {fileID: -1772524071256359715}
+  - component: {fileID: -377690338373559319}
+  - component: {fileID: -3428151102041708676}
   m_Layer: 8
   m_Name: Black King
   m_TagString: Untagged
@@ -137,9 +139,6 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  Died:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &-1692240845654563586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +208,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _throwPower: 200
   _maxThrowDistance: 5
+--- !u!114 &-377690338373559319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7b2df68c85c464d858e037ddfedea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGiveMoney:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-3428151102041708676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86626835ab6242b46bf1b65f60be2cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectPrefab: {fileID: 3247734163555348347, guid: 8772b224ebc7f6f4cb281c3a8bfb0146, type: 3}
 --- !u!1001 &2875475134327568997
 PrefabInstance:
   m_ObjectHideFlags: 0

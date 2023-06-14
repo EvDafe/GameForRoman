@@ -20,8 +20,12 @@ public class EnemyTurn : Turn
     
     private Vector3 FindClosestPlayerChessmanPosition()
     {
-        Vector3 selectedChessmanPosition = _selectedChessman.transform.position;
-        return selectedChessmanPosition.FindClosest(ChessmanContainer.Instance.PlayerChessmans);
+        if(ChessmanContainer.Instance.PlayerChessmans.Count > 0)
+        {
+            Vector3 selectedChessmanPosition = _selectedChessman.transform.position;
+            return selectedChessmanPosition.FindClosest(ChessmanContainer.Instance.PlayerChessmans);
+        }
+        return Vector3.zero;
     }
 
     private void Turn()

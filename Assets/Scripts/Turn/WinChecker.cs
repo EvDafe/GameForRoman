@@ -3,11 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class WinChecker : MonoBehaviour
 {
-    private void Start()
+    private void FixedUpdate()
     {
-        ChessmanContainer.Instance.OnDeathChessman.AddListener(CheckWin);
+        CheckWin();
     }
-    
     private void CheckWin()
     {
         if (ChessmanContainer.Instance.EnemyChessmans.Count == 0)
@@ -15,7 +14,6 @@ public class WinChecker : MonoBehaviour
     }
     private void Win()
     {
-        Debug.Log("Win");
         new SceneManager().TryLoadNextScene();
     }
 }

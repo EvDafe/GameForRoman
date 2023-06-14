@@ -3,11 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class DefeatChecker : MonoBehaviour
 {
-    private void Start()
+    private void FixedUpdate()
     {
-        ChessmanContainer.Instance.OnDeathChessman.AddListener(CheckDefeat);
+        CheckDefeat();
     }
-
     private void CheckDefeat()
     {
         if (ChessmanContainer.Instance.PlayerChessmans.Count == 0)
@@ -15,7 +14,6 @@ public class DefeatChecker : MonoBehaviour
     }
     private void Defeat()
     {
-        Debug.Log("Defeat");
         new SceneManager().ReloadScene();
     }
 }
